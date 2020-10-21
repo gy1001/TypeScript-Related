@@ -1,3 +1,9 @@
+/*
+ * @Author: gaoyuan
+ * @Date: 2020-10-21 10:46:48
+ * @LastEditors: gaoyuan
+ * @LastEditTime: 2020-10-21 16:31:15
+ */
 // 1: 如何定义静态类型
 const count:number = 1
 // 这里的count是一个 number 静态类型，以后不可改变类型了
@@ -8,8 +14,8 @@ count = "111"
 // 2: 自定义静态类型
 // 通过interface 定义自己想要的静态类型
 interface XiaoJieJie{
-  name: string,
-  age: number
+  name: string;
+  age: number;
 }
 const xiaoHong:XiaoJieJie= {
   name:'小红',
