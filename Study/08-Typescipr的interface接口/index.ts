@@ -2,7 +2,7 @@
  * @Author: gaoyuan
  * @Date: 2020-10-21 15:29:55
  * @LastEditors: gaoyuan
- * @LastEditTime: 2020-10-21 16:31:30
+ * @LastEditTime: 2020-10-21 16:42:21
  */
 const screenResume = (name:string,age:number,bust:number)=>{
   age < 24 && bust >= 90 && console.log(name + "进入面试");
@@ -25,4 +25,17 @@ interface Girl{
   age: number;
   bust: number;
   waistline?: number;
+}
+
+interface Girl2{
+  name: string;
+  age: number;
+  bust: number;
+  waistline?: number;
+}
+
+const getResume2 = (girl:Girl)=>{
+  console.log(girl.name + "年龄是" + girl.age)
+  console.log(girl.name + "胸围是" + girl.bust)
+  girl.waistline && console.log(girl.name + "腰围是" + girl.waistline)
 }
