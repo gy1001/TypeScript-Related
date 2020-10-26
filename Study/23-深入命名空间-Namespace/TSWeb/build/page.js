@@ -1,41 +1,6 @@
 "use strict";
-/*
- * @Author: gaoyuan
- * @Date: 2020-10-26 15:07:57
- * @LastEditors: gaoyuan
- * @LastEditTime: 2020-10-26 17:01:58
- */
-console.log('jspang.com');
-//class Header{
-//  constructor(){
-//    const elem = document.createElement("div")
-//    elem.innerText = "This is Header"
-//    document.body.appendChild(elem) 
-//  }
-//}
-//class Content{
-//  constructor(){
-//    const elem = document.createElement("div")
-//    elem.innerText = "This is Content"
-//    document.body.appendChild(elem) 
-//  }
-//}
-//class Footer{
-//  constructor(){
-//    const elem = document.createElement("div")
-//    elem.innerText = "This is Footer"
-//    document.body.appendChild(elem) 
-//  }
-//}
-//class Page{
-//  constructor(){
-//    new Header()
-//    new Content()
-//    new Footer()
-//  }
-//}
-var Home;
-(function (Home) {
+var Components;
+(function (Components) {
     var Header = /** @class */ (function () {
         function Header() {
             var elem = document.createElement("div");
@@ -44,6 +9,7 @@ var Home;
         }
         return Header;
     }());
+    Components.Header = Header;
     var Content = /** @class */ (function () {
         function Content() {
             var elem = document.createElement("div");
@@ -52,6 +18,7 @@ var Home;
         }
         return Content;
     }());
+    Components.Content = Content;
     var Footer = /** @class */ (function () {
         function Footer() {
             var elem = document.createElement("div");
@@ -60,11 +27,21 @@ var Home;
         }
         return Footer;
     }());
+    Components.Footer = Footer;
+})(Components || (Components = {}));
+/*
+ * @Author: gaoyuan
+ * @Date: 2020-10-26 17:37:57
+ * @LastEditors: gaoyuan
+ * @LastEditTime: 2020-10-26 17:55:07
+ */
+var Home;
+(function (Home) {
     var Page = /** @class */ (function () {
         function Page() {
-            new Header();
-            new Content();
-            new Footer();
+            new Components.Header();
+            new Components.Content();
+            new Components.Footer();
         }
         return Page;
     }());
