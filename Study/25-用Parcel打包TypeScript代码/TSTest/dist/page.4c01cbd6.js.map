@@ -1,0 +1,1 @@
+{"version":3,"sources":["page.ts"],"names":[],"mappings":";AAAA;;;;;;;AAMA,IAAM,OAAO,GAAU,QAAvB;AACA,OAAO,CAAC,GAAR,CAAY,OAAZ","file":"page.4c01cbd6.js","sourceRoot":"../src","sourcesContent":["/*\n * @Author: gaoyuan\n * @Date: 2020-10-27 10:38:00\n * @LastEditors: gaoyuan\n * @LastEditTime: 2020-10-27 10:39:06\n */\nconst teacher:string = \"jspang\"\nconsole.log(teacher)"]}
