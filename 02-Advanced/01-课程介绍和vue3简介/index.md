@@ -2,11 +2,12 @@
  * @Author: gaoyuan
  * @Date: 2020-10-27 14:27:04
  * @LastEditors: gaoyuan
- * @LastEditTime: 2020-10-27 14:46:26
+ * @LastEditTime: 2020-10-28 17:56:15
 -->
 #### 夸一夸vue3的一些新特性
 > vue3 两年开发，99位程序员成为贡献者，2600次提交，628次PR
 官方地址：[v3.vuejs.org](v3.vuejs.org)
+        [vue3中文文档](https://v3.cn.vuejs.org/)
 
 先来看下 vue3 让人惊艳的一些特性
 1. **Vue3** 采用渐进式开发，向下兼容
