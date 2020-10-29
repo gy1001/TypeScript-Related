@@ -2,7 +2,7 @@
  * @Author: gaoyuan
  * @Date: 2020-10-28 16:14:41
  * @LastEditors: gaoyuan
- * @LastEditTime: 2020-10-28 17:55:06
+ * @LastEditTime: 2020-10-29 16:04:37
 -->
 上节课学习了 setup 和 ref， 也算和vue3大码有了一次亲密接触，你现在也做出了一个”大宝剑餐单“这节课
 这节课我们就学一下 reactive 对语法和规范，然后用它来优化上一节课的代码。
@@ -62,7 +62,7 @@ export default {
 interface DataProps{
   girls: string[],
   selectGirl: string,
-  selectGirlFunc: (index: number) => void
+  selectGirlFun: (index: number) => void
 }
 ```
 编写完成后，你在显示的 data 变量做一个类型注解：
